@@ -29,9 +29,6 @@ function dhs (req, res, opt, next) {
       throw e;
   });
 
-  if (next)
-    next();
-
   if (opt.enter !== false) {
     d.enter();
     // have to exit on nextTick if no error, or it'll stack up forver.
@@ -39,6 +36,9 @@ function dhs (req, res, opt, next) {
       d.exit();
     });
   }
+
+  if (next)
+    next();
 
   return d;
 }
