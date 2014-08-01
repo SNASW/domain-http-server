@@ -1,6 +1,6 @@
 {
   "name": "domain-http-server",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A module for attaching domains to request and response objects",
   "main": "domain-http-server.js",
   "directories": {
@@ -26,6 +26,9 @@
     "express",
     "error",
     "handling"
+  ],
+  "contributors": [
+    {"name": "James J. Womack", "email": "james.womack@am.sony.com"}
   ],
   "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
   "license": "BSD",
