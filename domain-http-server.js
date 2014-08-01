@@ -23,7 +23,7 @@ function dhs (req, res, opt, next) {
       res.error(e);
 
     if (opt.callback)
-      opt.callback(e);
+      opt.callback(e, req, res);
 
     if (!res.error && !opt.callback)
       throw e;
