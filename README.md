@@ -1,4 +1,4 @@
-# domain-http-server
+# domain-http-server (module used by PMO)
 
 A handy little decorator for adding domain functionality to your HTTP
 server's request and response objects.
